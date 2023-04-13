@@ -279,9 +279,7 @@ func _CategoryService_GetCategory_Handler(srv interface{}, ctx context.Context, 
 	return interceptor(ctx, in, info, handler)
 }
 
-// CategoryService_ServiceDesc is the grpc.ServiceDesc for CategoryService service.
-// It's only intended for direct use with grpc.RegisterService,
-// and not to be introspected or modified (even as a copy)
+
 var CategoryService_ServiceDesc = grpc.ServiceDesc{
 	ServiceName: "pb.CategoryService",
 	HandlerType: (*CategoryServiceServer)(nil),
